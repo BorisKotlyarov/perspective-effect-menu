@@ -58,7 +58,6 @@ html, body {
     margin-left: 10px;
     background: #2879ee;
     overflow: auto;
-    padding: 10px;
     box-sizing: border-box;
     color: #fff;
     transition: .5s;
@@ -82,14 +81,68 @@ html, body {
     text-transform: uppercase;
 }
 
+.menu a {
+    display: block;
+    color: #ffffff;
+    padding: 5px 9px;
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.menu a:hover{
+    background: #54bfe6;
+}
+
 /*---------------------*/
 .test-conteiner {
-    height: 1000px;
-    background-color: #e63547;
+    /*height: 1000px;*/
+    position: relative;
     color: #ffffff;
     padding: 10px;
+    -moz-perspective: 500;
+    -webkit-perspective: 500;
+    perspective: 500;
+    -moz-perspective-origin: 50% 50%;
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
 }
+.test-conteiner img {
+    max-width: 100%;
+}
+
 .test-conteiner a {
     color: #ffffff;
+    text-decoration: none;
 }
+
+.test-left, .test-right {
+    padding: 50px;
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    margin: 0px 10px;
+}
+
+.test-left {
+    left: -20px;
+    width: 600px;
+    font-size: 120px;
+    background-color: #26a3e6;
+    -webkit-transform: rotateY(15deg) translateX(100px);
+    transform: rotateY(15deg) translateX(100px);
+}
+
+.test-right {
+    right: -20px;
+    top: 350px;
+    background-color: #e63547;
+    -webkit-transform: rotateY(-15deg) translateX(-100px);
+    transform: rotateY(-15deg) translateX(-100px);
+}
+
+pre {
+    background-color: #333;
+    color: #00ba14;
+}
+
 /*---------------------*/
