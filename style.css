@@ -36,10 +36,6 @@ html, body {
 
 
 /*---------------------*/
-.test-conteiner {
-    height: 1000px;
-    background-color: #e63547;
-}
 
 .left-block {
     height: 100%;
@@ -85,3 +81,15 @@ html, body {
     color: #fff;
     text-transform: uppercase;
 }
+
+/*---------------------*/
+.test-conteiner {
+    height: 1000px;
+    background-color: #e63547;
+    color: #ffffff;
+    padding: 10px;
+}
+.test-conteiner a {
+    color: #ffffff;
+}
+/*---------------------*/
